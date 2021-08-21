@@ -7,7 +7,7 @@ import {EditTodo} from './EditTodo';
 function App() {
   return (
       <div>
-        <div className="navbar bg-light navbar-expand-lg navbar-light">
+        <nav className="navbar bg-light navbar-expand-lg navbar-light">
           <ul className="navbar-nav mr-auto">
             <li className="navbar-item">
               <Link to="/" className="nav-link">Todos</Link>
@@ -16,7 +16,7 @@ function App() {
               <Link to="/create" className="nav-link">Create Todo</Link>
             </li>
           </ul>
-        </div>
+        </nav>
         <Switch>
           <Route exact path="/" component={TodoList}/>
           <Route path="/edit/:id" component={EditTodo}/>
